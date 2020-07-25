@@ -53,3 +53,14 @@
   <input v-model="message" type="text">
 </div>
 <hr>
+
+<h3>Composing with Components</h3>
+
+<div id="app-7">
+  <todo-item
+    v-for="item in groceryList"
+    v-bind:todo="item"
+    v-bind:key="item.id"
+  ></todo-item>
+</div>
+<hr>
