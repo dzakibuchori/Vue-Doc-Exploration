@@ -1,6 +1,11 @@
 // Import stylesheets
 import './style.css';
+import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11'
 
 // Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+});
